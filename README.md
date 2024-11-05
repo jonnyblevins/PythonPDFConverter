@@ -29,3 +29,19 @@ To use this program, make sure you have:
    ```bash
    python your_script_name.py
 4. Once completed, you will see the message: Conversion complete!
+
+
+## 📑 Sample Code
+
+Here’s the code that powers this conversion:
+
+```python
+from pdf2docx import Converter
+
+pdf_file = "JRBResume.pdf"
+docx_file = "ConvertedJRBResume.docx"
+cv = Converter(pdf_file)
+cv.convert()
+
+print("Conversion complete!")
+```
