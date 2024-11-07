@@ -1,3 +1,8 @@
+[![discord server]()]()
+[![Documentation](https://docs.rs/candle-core/badge.svg)](https://docs.rs/candle-core)
+[![License](https://img.shields.io/github/license/base-org/node?color=green)](https://github.com/jonnyblevins/PythonPDFConverter/main/README.md))
+
+
 # 📝 PDF to DOCX Converter
 
 I'm the kind of person who Googles "PDF to DocX free" so I was pumped to find this tool. This python program converts PDF files to DOCX format, using the `pdf2docx` library. It’s designed to take an input PDF file and produce a fully formatted DOCX file. 
