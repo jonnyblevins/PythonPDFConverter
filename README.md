@@ -1,5 +1,5 @@
 [![Join Our Discord Server](https://img.shields.io/badge/Discord-Join%20Server-blue?logo=discord)](https://discord.gg/Zexs56h2)
-[![Check Out My Github](https://img.shields.io/badge/GitHub-Jonny_Blevins%202.0-purple?style=flat-square)](https://github.com/jonnyblevins)
+[![Check Out My Github](https://img.shields.io/badge/GitHub-Jonny_Blevins%20-purple?style=flat-square)](https://github.com/jonnyblevins)
 
 # 📝 PDF to DOCX Converter
 
