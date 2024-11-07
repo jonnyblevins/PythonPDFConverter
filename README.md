@@ -1,7 +1,5 @@
-[![Join Our Discord Server](https://img.shields.io/badge/Discord-Join%20Server-red?logo=discord)](https://discord.gg/Zexs56h2)
-[![Documentation](https://docs.rs/candle-core/badge.svg)](https://docs.rs/candle-core)
-[![README](https://img.shields.io/github/license/base-org/node?color=green)](https://github.com/jonnyblevins/PythonPDFConverter/main/README.md))
-
+[![Join Our Discord Server](https://img.shields.io/badge/Discord-Join%20Server-blue?logo=discord)](https://discord.gg/Zexs56h2)
+[![Check Out My Github]([https://img.shields.io/badge/license-Apache%202.0-purple?style=flat-square)](https://github.com/jonnyblevins)
 
 # 📝 PDF to DOCX Converter
 
