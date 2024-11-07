@@ -1,6 +1,6 @@
 [![discord server]()]()
 [![Documentation](https://docs.rs/candle-core/badge.svg)](https://docs.rs/candle-core)
-[![License](https://img.shields.io/github/license/base-org/node?color=green)](https://github.com/jonnyblevins/PythonPDFConverter/main/README.md))
+[![README](https://img.shields.io/github/license/base-org/node?color=green)](https://github.com/jonnyblevins/PythonPDFConverter/main/README.md))
 
 
 # 📝 PDF to DOCX Converter
