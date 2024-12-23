@@ -63,14 +63,11 @@ def convert_pdf_to_docx(uploaded_file, save_dir):
         st.error(f"Conversion error: {str(e)}")
         return None
 
-# Title and subtitle
 st.title("Breaking Plaid PDF Converter")
 st.subheader("🌱 Upload a PDF to convert it into DOCX format. 🌿")
 
-# File uploader widget
 uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
-# Directory where converted files will be saved
 save_dir = os.path.join(os.getcwd(), "converted_files")
 
 if not os.path.exists(save_dir):
