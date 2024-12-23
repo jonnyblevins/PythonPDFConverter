@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to DOCX Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF to DOCX Converter</h1>
+        <form id="upload-form" method="POST" enctype="multipart/form-data">
+            <label for="pdf-file">Upload PDF File:</label>
+            <input type="file" id="pdf-file" name="pdf-file" accept=".pdf" required>
+            <button type="submit" class="submit-btn">Convert to DOCX</button>
+        </form>
+        <div id="message"></div>
+        <div id="download-link" style="display: none;">
+            <a href="#" id="download-btn" class="download-btn">Download DOCX</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
