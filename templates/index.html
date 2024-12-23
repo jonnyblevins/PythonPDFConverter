@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>PDF to DOCX Converter</h1>
-        <form id="upload-form" method="POST" enctype="multipart/form-data">
+        <form id="upload-form" action="/convert" method="POST" enctype="multipart/form-data">
             <label for="pdf-file">Upload PDF File:</label>
             <input type="file" id="pdf-file" name="pdf-file" accept=".pdf" required>
             <button type="submit" class="submit-btn">Convert to DOCX</button>
