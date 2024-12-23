@@ -5,6 +5,15 @@ import fitz
 from docx import Document
 import os
 
+st.markdown("""
+    <style>
+        body {
+            background: linear-gradient(to right, #E2725B, #F1C6A4);  /* Terracotta gradient */
+            color: black;  /* Set text color to black */
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 def convert_pdf_to_docx(uploaded_file, save_dir):
     try:
         pdf_document = fitz.open(stream=uploaded_file.read(), filetype="pdf")
