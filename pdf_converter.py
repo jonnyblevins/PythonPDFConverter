@@ -29,8 +29,8 @@ def convert_pdf_to_docx(uploaded_file, save_dir):
         return None
 
 st.set_page_config(page_title="PDF to DOCX Converter")
-st.title("PDF to DOCX Converter")
-st.subheader("Upload a PDF to convert it into DOCX format.")
+st.title("Breaking Plaid PDF Converter")
+st.subheader("🌱 Upload a PDF to convert it into DOCX format. 🌿")
 
 uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
