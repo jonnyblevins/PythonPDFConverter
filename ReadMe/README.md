@@ -1,50 +1,62 @@
-[![Join Our Discord Server](https://img.shields.io/badge/Discord-Join%20Server-blue?logo=discord)](https://discord.gg/Zexs56h2)
-[![Check Out My Github](https://img.shields.io/badge/GitHub-Jonny_Blevins%20-purple?logo=github)](https://github.com/jonnyblevins)
+# PDF to DOCX Converter with Streamlit
 
-# 📝 PDF to DOCX Converter
+This app lets you convert PDFs into DOCX format using the libaries of Streamlit, `fitz` from PyMuPDF, and `python-docx`. You upload a PDF, it gets converted, and you can download the DOCX. Clear as mud, right?
 
-I'm the kind of person who Googles "PDF to DocX free" so I was pumped to find this tool. This python program converts PDF files to DOCX format, using the `pdf2docx` library. It’s designed to take an input PDF file and produce a fully formatted DOCX file. 
+## Libraries Used:
+- `streamlit`: For the web app
+- `fitz` PyMuPDF extracts text from PDFs
+- `docx`: creates DOCX files
+- `os`: handling file paths and directories (this one is new to me but Shifra says it's good, lol)
 
-`TLDR: you'll find it under the PDFConverter.ipynb (Jupyter notebook format). You can copy and paste that, then save a PDF to the same file and run.`
+## Features:
+- **Convert PDF to DOCX**: Upload your PDF and turn it into a DOCX with all the text extracted
+- **Smooth Interface**: Streamlit gives you a neat, simple way to upload files. Hit convert and grab the result.
 
----
+## Code Breakdown:
 
-## 🚀 Features
-- Converts any PDF file to DOCX format
-- Maintains formatting and structure
-- Quick and easy to use with minimal setup
+1. **Setting Up Streamlit Page**:
+   - `st.set_page_config(page_title="PDF to DOCX Converter")` sets the browser tab title
+   - `st.markdown()` adds custom CSS to give the page a bit of personality with colors and style for the title, buttons, and other elements
 
----
+2. **File Upload and Save Directory**:
+   - The uploader is handled by `st.file_uploader("Choose a PDF file", type="pdf")`—you pick a PDF to upload
+   - The app automatically creates a directory (`converted_files`) to store your converted DOCX files
 
-## 🛠️ Requirements
+3. **Conversion Logic**:
+   - `convert_pdf_to_docx()` is the heart of the app. It reads the uploaded PDF, grabs the text from each page, and throws it into a new DOCX file
+   - The DOCX is saved in the `converted_files` folder with a `converted_` prefix
 
-To use this program, make sure you have:
-- Python 3.x installed (I've got 3.12)
-- The `pdf2docx` library (install with `pip install pdf2docx`)
+4. **Conversion Process**:
+   - After uploading and clicking "Convert to DOCX", a spinner lets you know the app is working
+   - When it's done, the path to the converted file shows up, and you can download it right from the app
 
----
+5. **Download Button**:
+   - `st.download_button()` gives you a button to download the newly created DOCX. Just click it and grab your file
 
-## 📂 How to Use
+## How to Use:
+2. Click "Browse Files."
+1. Upload your PDF.
+2. Click "Convert to DOCX."
+3. Once it's done, download your document. Let me know when it breaks, haha.
 
-1. Place the PDF file you want to convert in the same directory as the PDFConverter.ipynb file.
-2. Update the `pdf_file` and `docx_file` variables with the filename of your PDF and make up an output DOCX file name (e.g., `"YourResume.pdf"` matched with what you have saved and `"ConvertedYourResume.docx"` will be the file to be created).
-3. Run the script with:
-   ```bash
-   python your_script_name.py
-4. Once completed, you will see the message: Conversion complete!
+## Installation:
+(HOW TO GET THIS TO WORK!)
 
+I've provided you with the "requirements.txt" file. It's a neat tool that will install everything you need if you simply command line type:
 
-## 📑 Sample Code
+```bash
+pip install -r requirements.txt
+```
+It provides you with:
+   streamlit
+   pymupdf
+   python-docx
 
-Here’s the code that powers this conversion:
+After you've installed everything, to run the app on your computer 
 
-```python
-from pdf2docx import Converter
+streamlit run |REPLACE_WTIH_WHATEVER_YOU_NAMED_THIS_PROBABLY_"pdf_converter"|.py
 
-pdf_file = "JRBResume.pdf"
-docx_file = "ConvertedJRBResume.docx"
-cv = Converter(pdf_file)
-cv.convert()
-
-print("Conversion complete!")
+So to run, it'll look something like this:
+```bash
+streamlit run pdf_converter.py
 ```
